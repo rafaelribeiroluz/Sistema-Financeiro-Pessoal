@@ -4,21 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
-        mc:Ignorable="d" Height="300" Width="400" MinWidth="392" MinHeight="300" HorizontalAlignment="Center" VerticalAlignment="Center" ResizeMode="NoResize" Topmost="True" WindowStyle="ThreeDBorderWindow">
+        Icon="C:\Sistema Financeiro\Sistema Financeiro\View\Icons\FavIcon.ico"
+        mc:Ignorable="d" Height="300" Width="400" MinWidth="392" MinHeight="300" HorizontalAlignment="Center" VerticalAlignment="Center" ResizeMode="NoResize" Topmost="True" WindowStyle="ThreeDBorderWindow" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBox x:Name="txtUsuarioLogin" Height="23" Margin="99,136,0,0" TextWrapping="Wrap" Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" TextChanged="TextBox_TextChanged"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="150,10,0,0" VerticalAlignment="Top" Width="100" Source="/View;component/Icons/IconLogin.png">
             <Image.OpacityMask>
-                <ImageBrush ImageSource="/View;component/Icons/IconLogin.png"/>
+                <ImageBrush ImageSource="/View;component/Icons/IconLogin2.png" Stretch="Uniform"/>
             </Image.OpacityMask>
         </Image>
-        <PasswordBox x:Name="pswSenhaLogin" HorizontalAlignment="Left" Margin="99,182,0,0" VerticalAlignment="Top" Width="200" Height="23"/>
+        <PasswordBox x:Name="pswSenhaLogin" HorizontalAlignment="Left" Margin="99,164,0,0" VerticalAlignment="Top" Width="200" Height="23"/>
         <Label x:Name="lblUsuarioLogin" Content="Usuário
                " HorizontalAlignment="Left" Margin="39,136,0,0" VerticalAlignment="Top" Height="23" Width="55"/>
-        <Label x:Name="lblSenhaLogin" Content="Senha                " HorizontalAlignment="Left" Margin="39,182,0,0" VerticalAlignment="Top" Height="23" Width="55"/>
-        <Button x:Name="btnCadastrarLogin" Content="Cadastrar-se" Margin="99,210,215,41" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" Panel.ZIndex="6" Width="80"/>
+        <Label x:Name="lblSenhaLogin" Content="Senha                " HorizontalAlignment="Left" Margin="39,164,0,0" VerticalAlignment="Top" Height="23" Width="55"/>
         <Button x:Name="btnEntrarLogin" Content="Entrar" HorizontalAlignment="Left" Margin="194,210,0,0" VerticalAlignment="Top" Width="50" Height="20"/>
         <Button x:Name="btnSairLogin" Content="Sair" HorizontalAlignment="Left" Margin="249,210,0,0" VerticalAlignment="Top" Width="50" Height="20"/>
+        <Button x:Name="btnCadastrarLogin" Content="Cadastrar-se" HorizontalAlignment="Left" Margin="99,210,0,0" VerticalAlignment="Top" Width="75" Height="20"/>
 
     </Grid>
 </Window>
